@@ -24,12 +24,6 @@ brew install bats-core
 bats --version # 1.5.0 (at time of this writing)
 ```
 
-**install [bats-asserts](https://github.com/bats-core/bats-assert)**
-```sh
-git submodule init # initialize test/test_helpers for bats
-git submodule update # might as well git pull helpers
-```
-
 **install [httpie](https://httpie.io)**
 ```sh
 brew install httpie
