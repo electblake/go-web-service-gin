@@ -53,8 +53,8 @@ kill 64625
 ```
 
 ### Integration Testing using HTTPie
-- httpie as http lib - I like its interface and wanted to make it more use of it
+- [httpie](https://httpie.io) terminal app instead of curl
 - HTTP requests are made to a running server during the bats execution.
-- The server is started with `go run . &` and the process is pushed to background
-- integration tests waits until `localhost:8080` appears in server output
+- [bats](https://github.com/bats-core/bats-core) starts server with `go run . &` and the process is pushed to background
+- integration tests waits until [`localhost:8080`](http://localhost:8080) appears in server output
 - see [./test.bats](./test.bats) `setup_file` and `teardown_file`
